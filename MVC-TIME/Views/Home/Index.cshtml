@@ -3,15 +3,19 @@
     <title>Home Page</title>
     <link href="~/StyleSheet.css" rel="stylesheet" />
 </head>
-<body>
-    <form method="post">
-        <label name="beginyear">Begin Year</label>
-        <input name="beginyear"/>
+<body class="homeBody">
+    <div class="timeBox">
+        <div class="inputSearch">
+            <form method="post">
+                <label name="startyear">Start Year</label>
+                <input name="startyear" />
 
-        <label name="endyear">End Year</label>
-        <input name="endyear"/>
+                <label name="endyear">End Year</label>
+                <input name="endyear" />
 
-        <button type="submit">SUBMIT</button>
-    </form>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

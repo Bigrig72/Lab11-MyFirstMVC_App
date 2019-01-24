@@ -60,7 +60,7 @@ namespace MVC_TIME.Models
             foreach(TimePerson person in query)
             {
                                
-                if (person.Year >= startyear || person.Year <= endyear)
+                if (person.Year >= startyear && person.Year <= endyear)
                     requestedPeople.Add(person);
             }
 
