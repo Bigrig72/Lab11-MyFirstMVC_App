@@ -1,0 +1,72 @@
+﻿body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+.timeBox {
+    margin-left: 20vw;
+    margin-top: 3vw;
+}
+
+.homeBody {
+    background-image: url(time.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.inputSearch {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 13vw;
+    background: rgba(74, 57, 57, 0.3);
+}
+
+button {
+    margin-top: 1vw;
+    background: background: rgba(74, 57, 57, 0.3);
+    background: rgba(74, 57, 57, 0.3);
+    box-shadow: black;
+    box-shadow: 1px 2px 6px 0px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 10vw;
+}
+
+h1{
+    position: absolute;
+    top: -6vw;
+    right: 15vw;
+    font-size: 8vw;
+    /* bottom: 2vw; */
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: orangered;
+    /* border: 1px solid; */
+    text-decoration: underline;
+    /* position: relative; */
+    /* padding-bottom: 100px; */
+    -webkit-text-stroke: 1px red;
+}
+h2 {
+    font-size: 30px;
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: orangered;   
+    -webkit-text-stroke: 1px red;
+}
