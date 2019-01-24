@@ -45,3 +45,20 @@ td, th {
     padding: 8px;
     width: 10vw;
 }
+
+h1 {
+    position: absolute;
+    top: -6vw;
+    right: 15vw;
+    font-size: 8vw;
+    /* bottom: 2vw; */
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: orangered;
+    /* border: 1px solid; */
+    text-decoration: underline;
+    /* position: relative; */
+    /* padding-bottom: 100px; */
+    -webkit-text-stroke: 1px solid red;
+}
