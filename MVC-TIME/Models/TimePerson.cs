@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace MVC_TIME.Models
 {
@@ -33,7 +32,7 @@ namespace MVC_TIME.Models
             Context = context;
         }
 
-        public List<TimePerson> GetPerson(int startyear, int endyear)
+        public static List<TimePerson> GetPerson(int startyear, int endyear)
         {
             string _filePath = @"C:\Code\Lab 11-My First MVC App\Lab11-MyFirstMVC_App\MVC-TIME\wwwroot\PersonOfTheYear.csv";
 
@@ -44,12 +43,23 @@ namespace MVC_TIME.Models
             // This is TimePerson List of query
             var query = from line in allPeople
                         let data = line.Split(',')
-                        select new TimePerson(Int32.Parse(data[0]), data[1], data[2], data[3], Int32.Parse(data[4]), Int32.Parse(data[5]), data[6], data[7], data[98]);
+                        where data[0] != "Year"
+                        select new TimePerson
+                        (Int32.Parse(data[0]),
+                        data[1], 
+                        data[2], 
+                        data[3],
+                        (data[4] == "") ? 0 : Convert.ToInt32(data[4]), 
+                        (data[5] == "") ? 0 : Convert.ToInt32(data[5]),
+                        data[6],
+                        data[7],
+                        data[8]);
 
             List<TimePerson> requestedPeople = new List<TimePerson>();
 
-            foreach (TimePerson person in query)
+            foreach(TimePerson person in query)
             {
+                               
                 if (person.Year >= startyear || person.Year <= endyear)
                     requestedPeople.Add(person);
             }
@@ -57,7 +67,7 @@ namespace MVC_TIME.Models
             return requestedPeople;
         }
 
-        List<String> LoadCsvFile(string _filePath)
+        public static List<string> LoadCsvFile(string _filePath)
         {
             var reader = new StreamReader(File.OpenRead(_filePath));
             List<String> searchList = new List<String>();
@@ -73,4 +83,4 @@ namespace MVC_TIME.Models
 
 }
 
-}
+
