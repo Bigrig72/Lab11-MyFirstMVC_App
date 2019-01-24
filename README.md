@@ -1,7 +1,7 @@
 # Lab11-MyFirstMVC_App
 
 ## Person of the year
-This is a ASP.NET Core MVC web application. Using a csv file of all the ìTimeî Persons of the year from 1927 - 2016, Created is
+This is a ASP.NET Core MVC web application. Using a csv file of all the ‚ÄúTime‚Äù Persons of the year from 1927 - 2016, Created is
 a web app that will allow a user to put in a span of 2 different years, and a list of all the winners will be returned.
 
 ## What is being implemented
@@ -13,6 +13,8 @@ A model class named TimePerson contains properties for the time person of the ye
 into usable objects that were created through using lists. On the controller side, this is where the HTTP GET and POST happen on click of submit button. This causes a redirect to the results action
 and calls on TimePerson, which is a class to get all of the data from the csv file and filter it based on user input.
 
-## (Visuals)
+## Visuals
+![index](https://github.com/Bigrig72/Lab11-MyFirstMVC_App/blob/master/MVC-TIME/assets/time%20magazine.PNG)
+![results](https://github.com/Bigrig72/Lab11-MyFirstMVC_App/blob/master/MVC-TIME/assets/results%20page.PNG)
 
 
